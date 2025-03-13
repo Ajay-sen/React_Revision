@@ -1,0 +1,42 @@
+>> why to learn react?
+    -hype , job, trendy, build UI (incorrect reasons)
+    -makes easy to manage & build complex front end
+    -after all react or anything will get converted to html, js , css before execution
+
+>> when should i learn react?
+    -after mastering JS
+    -most project don t need react in  initial phase
+
+>>why react was created?
+    -React was created by Facebook in 2013 to improve the performance and maintainability of complex UIs, especially for its growing web applications like Facebook and Instagram. Traditional DOM manipulation was slow, so React introduced a virtual DOM to optimize updates efficiently. It also promoted a component-based architecture, making UI development modular and reusable. React aimed to provide a fast, scalable, and flexible way to build interactive user interfaces while improving developer productivity.
+
+>> how to learn
+    -go in depth: babel, fibre, virtual DOM, diff algo, hydration
+    - by making projects
+
+>> react is a library:
+    framework VS library:
+      >> Framework: Provides a complete structure with predefined rules, controlling the flow of the application (e.g., Angular, Django, nextJS). Developers follow its architecture.
+      -defined naming conventions
+      
+        >> Library: A collection of reusable functions or components that developers call as needed (e.g., React, jQuery). The developer controls the application flow.
+        Key Difference: In a framework, the framework calls the code; in a library, the code calls the library. 
+
+>> topics to learn
+    -core of react (state, UI manipulation, JSX)
+    -components reusability
+    -reusing of components (props)
+    -how to propagate change (hooks=> useState, useEffect)
+
+>> addional  addon to react
+    -router : react don t have router
+    -state management : react don t have state management (redux, redux toolkit, zustand, context API)
+    -class based components(legacy code)
+    -BAAS apps (backend as a service)
+        appwrite, firebase (used in social media clone, e commerce)
+
+
+>> after react:
+    -react is not a complete solution in most case
+    -no seo, browser render of js no routing
+    -framework: NextJS, Gatsby, Remix

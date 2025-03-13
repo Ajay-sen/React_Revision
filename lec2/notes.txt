@@ -1,0 +1,17 @@
+>> documentation: react.dev website
+>>react is a library
+
+>> npm vs npx:
+    npm (Node Package Manager): Used to install, manage, and run packages globally or locally. Example: npm install <package>
+    npx (Node Package Executor): Runs packages directly without installing them globally. Useful for executing CLI tools. Example: npx create-react-app my-app
+
+>> npx create react app:
+    -it creates a structured folder containing all the files
+    -but it also installs some files which are not even needed, making it bulky
+    - npm start: just executes the code written
+    -npm build: converts the code into core html/js/css which is required before deployment .
+    -it takes  time to install all the files , since there are large no. of dependencies
+    - it conatins node modules also as all are already installed
+
+>> npm create vite@latest
+    - it is much faster in installation than react app, since no. of dependencies in it are limited

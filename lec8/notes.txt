@@ -1,0 +1,10 @@
+>> interview qn: counter problem
+
+    suppose we are using setCounter to increment the counter value on clicking it,  now what if we define more than 1 setCounter
+
+    setCounter(counter+1)
+     setCounter(counter+1)
+      setCounter(counter+1)
+       setCounter(counter+1)
+
+    so  remember that, useState sends the value for updation in batches , that is it sends the counter varible to all the setCounter at once, ie  they all are updating the same counter value, hence it will work same in case of a single setCounter

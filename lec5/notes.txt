@@ -1,0 +1,26 @@
+>>  so we are basically facing the probklem in UI updation , ie we are able to change the value of the counter variabke , but is not getting updated in th page 
+
+>> if can do it using JS get element by id or somethinbg, but suppose we have this value in 10 places tahn we ahve to udate them all , so this  problem of "UI updation" is solved using REact
+
+>>so react provide some of the hooks to do such updation:
+
+1. useState=> 
+            useState is a React Hook that allows functional components to manage state.
+
+            Usage:
+            Stores and updates values within a component.
+            Triggers re-renders when state changes.
+            Syntax:
+           
+            import { useState } from "react";
+
+            function Example() {
+            const [count, setCount] = useState(0); // Initial state = 0
+
+            return (
+                <div>
+                <p>Count: {count}</p>
+                <button onClick={() => setCount(count + 1)}>Increase</button>
+                </div>
+            );
+            }

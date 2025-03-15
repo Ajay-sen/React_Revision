@@ -1,0 +1,2 @@
+>> in this lecture we are going to carete a custum react app
+>> skiping this for now  

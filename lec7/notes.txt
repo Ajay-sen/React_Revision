@@ -1,0 +1,45 @@
+>> go to tailwind css site, and go to the vite  section
+and follow the steps there to integrate tailwind 
+
+## the flag -D during installation ensures dev dependencies
+
+>> after installing tailwind, config it as given in documentation,
+and add it in the index.css where ever present
+
+>> Props in React
+        -Props (properties) are used to pass data from a parent component to a child component in React.
+
+        -Key Points:
+        -Immutable: Props cannot be changed by the child component.
+        Passed as attributes to components.
+        Used for dynamic content like text, numbers, functions, etc.
+
+        -we carete each of the components separately insid the COMPONENTS folder
+        -props enhances re-usability
+        -like if we need a lots of card to show , so to create all of the separately, we craete a singke card, mhaving image, text, and whatever data. then keep passing all these one by one to it, to craeate as many cards as you want.
+
+
+           >>> Example Usage
+            Parent Component (App.js)
+            jsx
+
+            import React from "react";
+            import Greeting from "./Greeting";
+
+            function App() {
+            return <Greeting name="Ajay" />;
+            }
+
+            export default App;
+
+
+            >>> Child Component (Greeting.js)
+            jsx
+           
+            import React from "react";
+
+            function Greeting(props) {
+            return <h1>Hello, {props.name}!</h1>;
+            }
+
+            export default Greeting;

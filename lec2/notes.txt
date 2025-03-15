@@ -9,7 +9,7 @@
     -it creates a structured folder containing all the files
     -but it also installs some files which are not even needed, making it bulky
     - npm start: just executes the code written
-    -npm build: converts the code into core html/js/css which is required before deployment .
+    -npm build: converts the code into core html/js/css whi ch is required before deployment .
     -it takes  time to install all the files , since there are large no. of dependencies
     - it conatins node modules also as all are already installed
 

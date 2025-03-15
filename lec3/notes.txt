@@ -1,0 +1,7 @@
+> app.jsx can render ony one element, hence to solve this issue , just enclose all your tags in a single empt tag <></> to make them a single entity.
+
+> All the components yiu create keep their names in capitalized form , its a convention, else it acts differntly, tahn expected (like: Navbar, Titlebar, Chai etc)
+
+> here in create react app , we are  not importing the js files using script tag, but then they ard working how?  
+
+it due to the react-scripts package in  package.json, which adds and imports the scripts tags internally by itself hence we get them

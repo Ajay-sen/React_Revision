@@ -1,0 +1,3 @@
+In this lec we are going create a simple page , having diff buttons, and on clicking that buton the UI color will be changed as per taht, 
+
+we are gong to make use of props here 

@@ -1,0 +1,72 @@
+- here we are going to craete a password generator
+
+>> HOOKS:
+
+    1>>> useCallBack():  useCallback is a React Hook that memoizes a function to prevent unnecessary re-creation on re-renders.
+
+Key Points:
+Returns a memoized function that only changes when dependencies change.
+Prevents child components from re-rendering unnecessarily when passed as a prop.
+Useful for performance optimization in complex apps.
+
+const memoizedFunction = useCallback(callbackFunction, [dependencies]);
+
+
+        2>>> useEffect: 
+            What it does?
+            Runs side effects (like API calls, DOM updates, timers) in function components.
+
+            ✅ Syntax:
+
+            useEffect(() => {
+            // Code to run
+            }, [dependencies]);
+            ✅ How it works?
+
+            Runs after rendering.
+            Re-runs when dependencies change.
+            Empty [] runs only once (on mount).
+            No dependencies = runs on every render.
+
+
+
+        3>>> useRef:
+
+        -when ever we are required  to take refrence to a field we use useRef
+        -Stores a mutable reference to a DOM element or value without causing re-renders.
+        -Used for accessing DOM elements and persisting values across renders.
+        -import { useRef, useEffect } from "react";
+
+            function InputFocus() {
+            const inputRef = useRef(null);
+
+            useEffect(() => {
+                inputRef.current.focus(); // Auto-focus on input
+            }, []);
+
+            return <input ref={inputRef} placeholder="Type here..." />;
+            }
+
+
+!!! INTERVIEW QNNN>> React vs Next.js – Access to window Object
+✅ React
+
+Runs entirely in the browser, so you can directly use the window object.
+Example:
+
+window.navigator.clipboard.writeText("Hello");
+
+
+✅ Next.js
+
+Executes both on the server (SSR) and client (CSR).
+The window object is not available during server-side execution.
+To use window, ensure code runs only on the client:
+
+useEffect(() => {
+  console.log(window.innerWidth); // Runs only on the client
+}, []);
+
+ Key Takeaway: React always has access to window, but in Next.js, use client-side checks to avoid errors.
+
+

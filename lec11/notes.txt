@@ -1,0 +1,8 @@
+
+>>>Custom hooks
+    >> sometimes we need to make the functionality of the hook as per you, then we need to design custom hooks
+    >> see hooks folder
+    >> its much simpeer to desigbn custom hooks
+
+>>
+

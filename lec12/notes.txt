@@ -1,0 +1,29 @@
+>> in this lec we will be working  on React Router
+>> React Router is a standard third party library for routing in react application, it enables navigation between different views or pages by updating URL without reloading the pages
+
+- Declarative Routing: Uses components like <Route> and <Link>.
+- Dynamic Routing: Matches URL parameters dynamically.
+- Nested Routes: Allows routes inside routes for better structuring.
+- Programmatic Navigation: Uses useNavigate() for navigation via code.
+
+>> install react-router-dom  to use it, and refer its doc for more info
+
+#### Why do you  use <Link tag> ,  instead <a> tag ??
+
+===> link tag is used in place of <a> tag , bcaz <a> tag refreshes the entire page when used. while there is no need of refreshing in react, just it goes and injehcts the new node values in DOM 
+
+## and NavLink is used , instaed of haing Link bcaz  navlink provides some additional features
+
+
+>>> for using router, we directly go to the main .jsx instead app.jsx and use <RouterProvider/>  from react-router-dom, it takes a single prop to work that is router.
+
+<RouterProvider router={router}/>
+ see the main.jsx code , to get details
+
+
+ >>> when you want to keep the header and footer same , and rest all thing tochange dynamically,  react-router provide us some thing called <Outlet/>    , see the layout file
+
+ >>> see the use of useParams in user.jsx
+
+
+ >>> see how we are accessing github API in github page in the project

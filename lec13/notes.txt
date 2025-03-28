@@ -1,0 +1,17 @@
+>>> CONTEXT API
+>> Context API in React is a state management solution used to share data across the component tree without passing props manually at every level.
+
+>> instead passing the prop to all the components in different levels , we make it a global , and all other comps access it from there
+
+>> context API can only be used inside react, more such similar things to do the same functionality are:
+    Redux, redux-toolkit(RTK), react-redux,zustand
+
+>> - it comes with react itself, no need to install separately
+- create files inside context folder, and erite pure java codes inside it
+
+- you jhave to wrap the children to which you wnat tehm to access the global values or sya props
+
+- craete the both the files as inside the context folder , and then fetch the data form any component using the "user" and update that data using the "setUser"
+
+
+>>> second project

@@ -1,0 +1,46 @@
+>>REDUX
+
+> Redux is a state management library for JavaScript applications, mainly used with React. It provides a single source of truth (centralized store) and follows a unidirectional data flow.
+
+> React-Redux is the official Redux binding for React, allowing components to interact with the Redux store using hooks.  as a bridge between react and redux
+
+- the data flow in redux is much better than context api 
+
+>> Redux Toolkit (RTK)
+Redux Toolkit (RTK) is the official, recommended way to write Redux logic, providing a simpler API with built-in best practices.
+2 main methods under ir:
+useSelector:   to select any data
+useDispatch: to dispatch data from the storage
+
+- Redux Toolkit handles state management, while React-Redux integrates it with React.
+
+steps to work with redux:
+## can see the documentationnin redux-toolkit.js.org
+
+- create the store , (we doing inside app folder in src)
+
+
+
+>>> SUMMARY:::
+
+- react and react-rdux are two diff things, react is a core libray, while react-redux is a implementation to do the wiring betweet react and redux
+
+- react toolkit help us to do many works automatically behind the scene without doing it manually
+
+- always start with creating the store, and all application should have only one store "single source of truth"
+
+- inside store, we hafve configureStore to config, now to mhave data flow it ask for reducer 
+### Reducers in Redux are pure functions that take the current state and an action as arguments and return a new state. They specify how the state changes in response to actions.
+
+- then we define the reducers in feature folder, 
+- its a convention  that we say feature as " Slice"
+- now to create a slice , we ned 3 things : name, initial State, what all thngs we are going to do ie (list of reducers), inside recures yiu can put as many key: function pairs as you want
+
+inside each of the task in reducer you get access of 2 things , (store , action)=>  state gives updated state value in the store, action give action.payload
+- then expoort all the reducers separately , and another things is export the main source
+
+- now go to your components , you have 2 things to do , eithaer to take vaue or send value
+
+- for sending we use useDispatch, tehn import the reducer ( addTodo, deleteTodo) and then send using that dispatch
+
+- for geting the vakues , use useSelector, then pich value whatever you want , in  any variable
